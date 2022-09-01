@@ -38,6 +38,6 @@ class TouchDemoFrameLayout(
     }
 
     companion object {
-        private const val VIEW_NAME = "TouchDemoFrameLayout"
+        private const val VIEW_NAME = "FrameLayout"
     }
 }

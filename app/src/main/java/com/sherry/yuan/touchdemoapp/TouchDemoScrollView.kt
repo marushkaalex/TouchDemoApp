@@ -38,6 +38,6 @@ class TouchDemoScrollView(
     }
 
     companion object {
-        private const val VIEW_NAME = "TouchDemoScrollView"
+        private const val VIEW_NAME = "ScrollView"
     }
 }

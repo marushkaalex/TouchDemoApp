@@ -74,6 +74,6 @@ class TouchDemoActivity : AppCompatActivity() {
     }
 
     companion object {
-        private const val VIEW_NAME = "TouchDemoActivity"
+        private const val VIEW_NAME = "Activity"
     }
 }

@@ -19,7 +19,7 @@ object TouchDemoLogger {
             MotionEvent.ACTION_UP -> "ACTION_UP"
             else -> "other"
         }
-        val message = "$actionName event called in $viewName's $function"
+        val message = "%21s | %11s | %s".format(actionName, viewName, function)
         Timber.d(message)
     }
 }
