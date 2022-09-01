@@ -100,7 +100,7 @@ Int-константа. Полный список [здесь](https://developer
 
 ## Саммари
 
-[comment]: <> (![Summary table]&#40;https://miro.medium.com/max/1400/1*c4Trk1jiL7126b_15JXrlg.png&#41;)
+[comment]: <> (Оригинальная картинка ![Summary table]&#40;https://miro.medium.com/max/1400/1*c4Trk1jiL7126b_15JXrlg.png&#41;)
 
 ![Summary table](./methods.png)
 
@@ -109,7 +109,3 @@ Int-константа. Полный список [здесь](https://developer
 Из интерфейса `ViewParent` (`ViewGroup` его реализует). Для того, чтобы паренты и паренты парентов не перехыватывали событие.
 
 Паренты должны подчиняться на все время жеста, то есть все инетрцепторы будут выключены с `ACTION_DOWN` и до `ACTION_UP`/`ACTION_CANCELLED`. `requestDisallowInterceptTouchEvent()` нужно вызывать для каждого нового жеста отдельно.
-
-If you don’t want to give the view’s ancestors a chance to handle the event, the view’s onTouchEvent() must return true so its ancestors’ onTouchEvent() don’t get triggered when the event flows back up.
-
-For example, ScrollView calls this inside is onInterceptTouchEvent() and onTouchEvent() if it detects a scroll.
