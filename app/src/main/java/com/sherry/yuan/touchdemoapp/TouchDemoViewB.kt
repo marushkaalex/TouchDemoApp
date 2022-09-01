@@ -25,7 +25,7 @@ class TouchDemoViewB(
             viewName = VIEW_NAME,
             function = "onTouchEvent",
         )
-        return true
+        return super.onTouchEvent(event)
     }
 
     companion object {

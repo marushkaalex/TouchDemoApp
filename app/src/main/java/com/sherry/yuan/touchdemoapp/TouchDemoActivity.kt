@@ -15,7 +15,7 @@ class TouchDemoActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityTouchDemoBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        setupListeners()
+//        setupListeners()
     }
 
     override fun dispatchTouchEvent(ev: MotionEvent): Boolean {
