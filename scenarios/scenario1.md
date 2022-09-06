@@ -1,4 +1,4 @@
-# Tap on View B. None of the views consume it
+# Клик на View B. Никто не обрабатывает событие
 
 Поведение вьюх не переопределено.
 

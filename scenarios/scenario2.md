@@ -1,4 +1,4 @@
-# Tap on View B. View B’s onTouchEvent() returns true
+# Клик на View B. View B.onTouchEvent() возвращает true
 
 `ViewB.onTouchEvent()` возвращает `true`. Событие дальше не идет
 

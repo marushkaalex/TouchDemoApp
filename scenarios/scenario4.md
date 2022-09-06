@@ -1,4 +1,4 @@
-# Scroll on View B
+# Скролл на View B
 
 `ScrollView.onInterceptTouchEvent()` возвращает `true`, дочерние вью перестают оповещаться о событиях
 
