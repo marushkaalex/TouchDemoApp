@@ -27,7 +27,6 @@ class TouchDemoViewA(
             viewName = VIEW_NAME,
             function =  "onTouchEvent",
         )
-        GestureDetector(GestureDetector.OnGestureListener {})
         return super.onTouchEvent(event)
     }
 
