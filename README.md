@@ -1,6 +1,7 @@
 # Touch system
 
 ## Motion event
+
 Любое движение репортится через него. Часто используемые поля
 
 - action - тип выполняемого действия
@@ -9,9 +10,11 @@
 - eventTime - время события на базе SystemClock.uptimeMillis()
 
 ## Координаты экрана
+
 Измеряются в пикселях от левого верхнего угла. То есть x = 0; y = 0 - левый верхний угол, x = maxX; y = maxY нижний правый
 
 ## Action
+
 Int-константа. Полный список [здесь](https://developer.android.com/reference/android/view/MotionEvent#constants_1). Самые часто используемые
 
 - `ACTION_DOWN` - палец впервые касается экрана. Событие содержит начальную позицию жеста
@@ -22,6 +25,7 @@ Int-константа. Полный список [здесь](https://developer
 Жест - серсия MotionEvent, начинающаяся с `ACTION_DOWN` и заканчивающаяся либо `ACTION_UP`, либо `ACTION_CANCEL`
 
 ## Как Android обрабатывает MotionEvent
+
 Событие "течет" сверху вниз по иерархии вью, от Activity и, если не было перехвачено, до дочерней - где оно произошло
 
 На пути вниз вызывается `dispatchTouchEvent()`. Вью может перехватывать события переопределяя `onInterceptTouchEvent()` - если метод возвращает `true`, значит событие перехвачено и не должно быть передано дочерним вью; если `false` - вью ознакомилось с событием, но пропускает его дальше
@@ -100,8 +104,7 @@ Int-константа. Полный список [здесь](https://developer
 
 ## Саммари
 
-[comment]: <> (Оригинальная картинка ![Summary table]&#40;https://miro.medium.com/max/1400/1*c4Trk1jiL7126b_15JXrlg.png&#41;)
-
+[comment]: 
 ![Summary table](./methods.png)
 
 ## requestDisallowInterceptTouchEvent()

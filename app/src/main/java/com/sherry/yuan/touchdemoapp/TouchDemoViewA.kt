@@ -2,6 +2,7 @@ package com.sherry.yuan.touchdemoapp
 
 import android.content.Context
 import android.util.AttributeSet
+import android.view.GestureDetector
 import android.view.MotionEvent
 import android.view.View
 import android.widget.FrameLayout
@@ -26,6 +27,7 @@ class TouchDemoViewA(
             viewName = VIEW_NAME,
             function =  "onTouchEvent",
         )
+        GestureDetector(GestureDetector.OnGestureListener {})
         return super.onTouchEvent(event)
     }
 
